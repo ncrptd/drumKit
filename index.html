@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="keys">
+        <div class="key" data-code="KeyA">
+          <span class="key-letter">a</span>
+          <span class="sound">clap</span>
+        </div>
+        <div class="key" data-code="KeyS">
+          <span class="key-letter">s</span>
+          <span class="sound">hihat</span>
+        </div>
+        <div class="key" data-code="KeyD">
+          <span class="key-letter">d</span>
+          <span class="sound">kick</span>
+        </div>
+        <div class="key" data-code="KeyF">
+          <span class="key-letter">f</span>
+          <span class="sound">openhat</span>
+        </div>
+        <div class="key" data-code="KeyG">
+          <span class="key-letter">g</span>
+          <span class="sound">boom</span>
+        </div>
+        <div class="key" data-code="KeyH">
+          <span class="key-letter">h</span>
+          <span class="sound">ride</span>
+        </div>
+        <div class="key" data-code="KeyJ">
+          <span class="key-letter">j</span>
+          <span class="sound">snare</span>
+        </div>
+        <div class="key" data-code="KeyK">
+          <span class="key-letter">k</span>
+          <span class="sound">tom</span>
+        </div>
+        <div class="key" data-code="KeyL">
+          <span class="key-letter">l</span>
+          <span class="sound">tink</span>
+        </div>
+      </div>
+
+      <div class="audio-container">
+        <audio src="/sounds/boom.wav" data-code="KeyA"></audio>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
