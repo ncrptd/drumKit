@@ -3,11 +3,12 @@ let keys = document.querySelectorAll('[data-code]');
 function playSound(event) {
   keys.forEach((key) => {
     let keyCodeAttr = key.getAttribute('data-code');
+
     if (event.code == keyCodeAttr) {
       let playingKey = document.querySelector(`[data-code=${keyCodeAttr}]`);
       let soundName = playingKey.lastElementChild.innerText;
       let url = `/sounds/${soundName}.wav`;
-      let audio = new Audio(url);
+      let audio = document.querySelector(`audio[data-code='${keyCodeAttr}']`);
       audio.play();
       addClass(playingKey);
     }
