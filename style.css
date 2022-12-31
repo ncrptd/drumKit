@@ -24,9 +24,10 @@
   width: 100px;
   padding: 1rem;
   margin-right: 1rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   transition: all 0.07s;
   cursor: pointer;
+  color: white;
 }
 .play {
   border: 3px solid #fdb813;
@@ -36,7 +37,6 @@
   margin-right: 0;
 }
 .key span {
-  color: white;
   display: block;
   margin-top: 5px;
 }
