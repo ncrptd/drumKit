@@ -5,9 +5,10 @@ function playSound(event) {
     let keyCodeAttr = key.getAttribute('data-code');
     if (event.code == keyCodeAttr) {
       let playingKey = document.querySelector(`[data-code=${keyCodeAttr}]`);
-      let soundName = playingKey.lastElementChild;
-      let url = `/sounds/${soundName.innerText}.wav`;
+      let soundText = playingKey.lastElementChild;
+      let url = `/sounds/${soundText.innerText}.wav`;
       let audio = new Audio(url);
+      audio.preload;
       audio.play();
       addClass(playingKey);
     }
